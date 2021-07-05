@@ -1,1 +1,3 @@
-export {ImageSlider} from './src/components/ImageSlider/ImageSlider'
+import {ImageSlider} from './src/components/ImageSlider/ImageSlider'
+
+export {ImageSlider}
