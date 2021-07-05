@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { ReactComponent as NextArrow } from './icons/chevron_right_24px.svg';
 import { ReactComponent as PrevArrow } from './icons/chevron_left_24px.svg';
 import styles from './ImageSlider.module.css';
