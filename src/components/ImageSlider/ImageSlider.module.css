@@ -1,0 +1,67 @@
+.images {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.prevImage, .nextImage {
+    width: 20%;
+    height: 80%;
+    align-self: center;
+}
+
+.images > * > img {
+    height: 100%;
+    width: 100%;
+}
+
+.images * {
+    user-select: none;
+}
+
+.images > * {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: box-shadow .25s ease;
+}
+
+.images > *:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.currentImage {
+    width: 50%;
+    height: 100%;
+}
+
+.imageSlider {
+    position: relative;
+}
+
+.prevArrow, .nextArrow {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: .25;
+    transition: opacity .25s ease-in-out;
+}
+
+.prevArrow:hover, .nextArrow:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .prevImage, .nextImage {
+        display: none;
+    }
+
+    .currentImage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .prevArrow, .nextArrow {
+        top: 70%;
+    }
+}
