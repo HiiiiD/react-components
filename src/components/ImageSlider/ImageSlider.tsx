@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from 'react';
-import { ReactComponent as NextArrow } from './icons/chevron_right_24px.svg';
-import { ReactComponent as PrevArrow } from './icons/chevron_left_24px.svg';
 import styles from './ImageSlider.module.css';
+import ChevronLeft from '@material-ui/icons/ChevronLeft';
+import ChevronRight from '@material-ui/icons/ChevronRight';
 
 export interface ImageSliderProps {
   images: RecordImage[];
@@ -104,17 +104,15 @@ export const ImageSlider: FC<ImageSliderProps> = ({
         onClick={() => updateIndex(ArrowType.PREVIOUS)}
         style={{ left: prevArrow.arrowDistanceFromScreen,
         background: prevArrow.boxBackground }}>
-        <PrevArrow width={prevArrow.arrowWidth}
-          height={prevArrow.arrowHeight}
-          fill={prevArrow.arrowColor}
+        <ChevronLeft htmlColor={prevArrow.arrowColor}
+          style={{width: prevArrow.arrowWidth, height: prevArrow.arrowHeight}}
         />
       </div>}
       {showNextArrow && <div className={styles.nextArrow} onClick={() => updateIndex(ArrowType.NEXT)}
         style={{ right: nextArrow.arrowDistanceFromScreen,
         background: nextArrow.boxBackground }}>
-        <NextArrow width={nextArrow.arrowWidth}
-          height={nextArrow.arrowHeight}
-          fill={nextArrow.arrowColor}
+        <ChevronRight htmlColor={nextArrow.arrowColor}
+          style={{width: nextArrow.arrowWidth, height: nextArrow.arrowHeight}}
         />
       </div>}
     </div>
