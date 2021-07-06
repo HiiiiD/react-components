@@ -1,7 +1,6 @@
 {
   "name": "@hiiiid/react-components",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "types": "lib/index.d.ts",
   "dependencies": {
