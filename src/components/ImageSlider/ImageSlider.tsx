@@ -12,7 +12,7 @@ export interface ImageSliderProps {
   enableImageClicking?: boolean;
 }
 
-interface ArrowProperties {
+export interface ArrowProperties {
   arrowColor?: string;
   arrowHeight?: number | string;
   arrowWidth?: number | string;
