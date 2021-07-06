@@ -2,6 +2,7 @@
   "name": "@hiiiid/react-components",
   "version": "0.1.0",
   "license": "MIT",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
     "react": "^17.0.2",
@@ -18,7 +19,6 @@
     "@hiiiid:registry": "https://npm.pkg.github.com"
   },
   "files": ["lib"],
-  "directories": {"lib": "lib"},
   "scripts": {
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
