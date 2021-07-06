@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "types": "lib/index.d.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -16,6 +17,13 @@
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiiiiD/react-components.git"
+  },
+  "publishConfig": {
+    "@hiiiid:registry": "https://npm.pkg.github.com"
   },
   "files": ["lib"],
   "directories": {"lib": "lib"},
