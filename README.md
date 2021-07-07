@@ -13,7 +13,7 @@ import {compName} from '@hiiiid/react-components'
 ```
 or
 ```jsx
-import {compName} from '@hiiiid/react-components/components/compName/compName'
+import {compName} from '@hiiiid/react-components/components/compName'
 ```
 
 Change `compName` with the name of the component
