@@ -1,1 +1,1 @@
-export * from './components/ImageSlider/ImageSlider'
+export * from './components/ImageSlider/'
