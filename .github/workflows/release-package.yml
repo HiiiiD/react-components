@@ -26,5 +26,5 @@ jobs:
           cd lib
           yarn pack --filename react-components.tgz
           yarn publish react-components.tgz
-      - env:
+        env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
