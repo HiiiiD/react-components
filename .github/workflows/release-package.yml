@@ -18,7 +18,9 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: yarn
       - run: yarn build
-      - run: yarn pack --filename react-components.tgz
-      - run: yarn publish react-components.tgz
+      - run: cp package.json lib/
+      - run: cp LICENSE lib/
+      - run: cp README.md lib/
+      - run: yarn publish lib
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
