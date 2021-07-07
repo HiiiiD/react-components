@@ -21,6 +21,8 @@ jobs:
       - run: cp package.json lib/
       - run: cp LICENSE lib/
       - run: cp README.md lib/
-      - run: yarn publish lib
+      - run: cd lib
+      - run: yarn pack --filename react-components.tgz
+      - run: yarn publish react-components.tgz
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
