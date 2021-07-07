@@ -1,9 +1,9 @@
 {
   "name": "@hiiiid/react-components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "dependencies": {
     "@material-ui/core": "^4.12.0",
     "@material-ui/icons": "^4.11.2",
@@ -17,9 +17,6 @@
   "publishConfig": {
     "@hiiiid:registry": "https://npm.pkg.github.com"
   },
-  "files": [
-    "lib"
-  ],
   "scripts": {
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
